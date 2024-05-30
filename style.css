@@ -1,0 +1,404 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.logo-Promasajes {
+    width: 20%;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/*CSS para nuestra Página de Productos*/
+
+#main-productos {
+    background-image: linear-gradient(to bottom,
+            rgba(243, 243, 157, 0.8),
+            rgba(102, 102, 179, 0.8)), url(banner/banner03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productos {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.productos div {
+    display: inline-block;
+    text-align: center;
+    width: 285px;
+    vertical-align: top;
+    margin: 5 2%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos div:hover {
+    border-color: #c78c19;
+}
+
+.productos div:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos div:hover h2 {
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.logoPromasajes {
+    width: 10%;
+}
+
+/*CSS para nuestro Formulario de Contacto*/
+
+#body-contacto {
+    background-image: linear-gradient(to bottom,
+            rgba(243, 243, 157, 0.8),
+            rgba(102, 102, 179, 0.8)), url(banner/banner04.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formuContacto {
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contenido-contacto {
+    display: block;
+    position: relative;
+    width: calc(90%);
+    height: auto;
+    margin: 10px auto;
+    padding: 30px 10px 10px;
+    background: #ccc;
+}
+
+.contenido-contacto input {
+    display: block;
+    width: 95%;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.contenido-contacto label {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 10px;
+    left: 50px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgba(117, 152, 216, 0.3);
+}
+
+.contenido-fieldset {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.contenido-fieldset label {
+    margin-left: 43%;
+    text-align: left;
+    display: block;
+    width: 15%;
+    top: 10px;
+    bottom: 15px;
+    left: 50px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgba(117, 152, 216, 0.3);
+    font-size: 22px;
+}
+
+legend {
+    display: block;
+    width: 55%;
+    top: 10px;
+    left: 50px;
+    font-size: 25px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgba(117, 152, 216, 0.3);
+    margin-bottom: 2%;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 08px 25px;
+    width: 92%;
+}
+
+.checkbox {
+    margin-top: 5%;
+    width: 55%;
+    top: 10px;
+    left: 50px;
+    font-size: 25px;
+    background-color: rgba(117, 152, 216, 0.3);
+    border-radius: 20px;
+}
+
+select {
+    display: block;
+    margin-left: 43%;
+    height: 28px;
+    width: 150px;
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+.enviar {
+    margin-top: 5%;
+    text-align: center;
+    width: 45%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+.error {
+    margin-left: 20%;
+    color: white;
+    width: 60%;
+    border-radius: 20px;
+    background-color: rgba(167, 46, 46, 0.6);
+    font-size: 20px;
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 08px 13px;
+}
+
+/*CSS para nuestra Home*/
+
+.banner {
+    width: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=70);
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    transition: 400ms;
+    box-shadow: 5px 5px 15px 8px #000000;
+}
+
+.utensilios:hover {
+    opacity: 0.6;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: "★";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    width: 40%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 1200px;
+    margin: 3em auto;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja,
+    .principal,
+    .mapa-contenido,
+    .contenido-diferenciales,
+    .video,
+    .productos,
+    form {
+        width: auto;
+    }
+
+    .lista-diferenciales,
+    .imagen-diferenciales,
+    .enviar {
+        width: 100%;
+    }
+
+    .productos li {
+        width: 100%;
+        padding: 30px 0;
+    }
+}

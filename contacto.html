@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contacto - Promasajes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="body-contacto">
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logoProMasajes.jpg" class="logo-Promasajes" alt="Logo de Pro Estética y Masajes">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="caja">
+        <form id="formuContacto" novalidate action="#">
+            <div class="contenido-contacto">
+                <label class="etiqueta" for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+            </div>
+            <div class="error" id="error_nombre"></div>
+
+            <div class="contenido-contacto">
+                <label class="etiqueta" for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required
+                    placeholder="email@dominio.com">
+            </div>
+            <div class="error" id="error_email"></div>
+
+            <div class="contenido-contacto">
+                <label class="etiqueta" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXX XXXX">
+            </div>
+            <div class="error" id="error_telefono"></div>
+
+            <div class="contenido-contacto">
+                <label class="etiqueta" for="mensaje">Mensaje</label>
+                <textarea cols="105" rows="3" id="mensaje" class="input-padron" required></textarea>
+            </div>
+
+
+            <fieldset class="contenido-fieldset">
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <div>
+                    <label class="etiqueta" for="radio-email"><input type="radio" name="contacto" value="email"
+                            id="radio-email">Email</label>
+                </div>
+
+                <div>
+                    <label class="etiqueta" for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                            id="radio-telefono">Teléfono</label>
+                </div>
+                <div>
+                    <label class="etiqueta" for="radio-wathsapp"><input type="radio" name="contacto" value="wathsapp"
+                            id="radio-wathsapp" checked>WathsApp</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="contenido-fieldset">
+                <legend>¿En cual horario prefiere ser atendido?</legend>
+                <div>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Pro Estética y
+                Masajes?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar">
+
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>09h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>09h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>09h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>09h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>09h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10h - 17h</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="./form_Contacto.js"></script>
+    </main>
+    <footer>
+        <img src="imagenes/logoProMasajes.jpg" class="logoPromasajes" alt="Logo de Pro Estética y Masajes">
+        <p class="copyright">&copy Copyright Pro Estética y Masajes - 2018</p>
+    </footer>
+</body>
